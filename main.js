@@ -1,4 +1,15 @@
-"use strict"
+
+function coffeeSearch (input, array ){
+    var currentFocus;
+    input.addEventListener("input",function (e) {
+        var a,b,i, val = this.valid;
+        // closeAllLists ();
+        if (!val) {return false;}
+        currentFocus = -1;
+        a = document.createElement("DIV");
+        a.setAttribute("id", this.id +``)
+    })
+}
 
 
 
@@ -14,7 +25,7 @@ function renderCoffee(coffee) {
 
 }
 
-// run through each coffee id
+// each coff
 function sortCoffee(coffees) {
     var html = '';
     for(var i = coffees.length - 1; i >= 0; i--) {
@@ -22,7 +33,6 @@ function sortCoffee(coffees) {
     }
     return html;
 }
-
 
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
@@ -38,6 +48,8 @@ function updateCoffees(e) {
     });
     tbody.innerHTML = sortCoffee(filteredCoffees);
 }
+
+
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
@@ -74,5 +86,4 @@ message.addEventListener('input', function () {
 });
 
 
-
-
+///// testing /////

@@ -10,29 +10,28 @@
 <body>
 <div id="EntirePage">
 
-    <h1>Coffee!</h1>
+    <h1>Search Coffee Menu!</h1>
     <form>
         <label for="roast-selection"></label>
         <select id="roast-selection">
             <option>light</option>
             <option>medium</option>
             <option>dark</option>
-            <option>All </option>
+            <option>all</option>
         </select>
         <input id="submit" type="submit">
     </form>
-
+<br>
     <form>
         <div class="input-group">
             <label class="Search-Coffee">
                 <input type="text" class="form-control" placeholder="Search Coffee">
-<!--                <input type="text" class="form-control" placeholder="Search">-->
             </label>
         </div>
     </form>
-
-    <p id="result"></p>
-
+    <div class="d-flex "><h3 id="result"></h3><div>
+        </div>
+    </div>
 
 
 
@@ -46,8 +45,6 @@
         </thead>
         <tbody id="coffees"></tbody>
     </table>
-<!--id="coffees"-->
-
     <script src="main.js"></script>
 </div>
 
