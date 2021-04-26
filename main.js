@@ -8,6 +8,7 @@ function renderCoffee(coffee) {
     html += '</tr>';
 
     return html;
+
 }
 
 function sortCoffee(coffees) {
