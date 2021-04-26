@@ -14,15 +14,23 @@ function coffeeSearch (input, array ){
 
 
 // populate the list
+// function renderCoffee(coffee) {
+//     var html = '<tr class="coffee">';
+//     html += '<td>' + coffee.id + '</td>';
+//     html += '<td>' + coffee.name + '</td>';
+//     html += '<td>' + coffee.roast + '</td>';
+//     html += '</tr>';
+//
+//     return html;
+//
+// }
+
 function renderCoffee(coffee) {
-    var html = '<tr class="coffee">';
-    html += '<td>' + coffee.id + '</td>';
-    html += '<td>' + coffee.name + '</td>';
-    html += '<td>' + coffee.roast + '</td>';
-    html += '</tr>';
-
+    var html = '<div class="d-flex">';
+    html += '<h3>' + coffee.name + '</h3>';
+    html += '<p class="roastName text-secondary" style="margin-top: 5px; margin-left: 5px; padding-top: 2px; align-self: flex-end;">' + coffee.roast + '</p>';
+    html += '</div>';
     return html;
-
 }
 
 // each coff
