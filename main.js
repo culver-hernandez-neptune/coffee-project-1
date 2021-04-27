@@ -62,16 +62,31 @@ var coffees = [
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
-var input = document.querySelector("#input")
+var input = document.querySelector("#input");
 
 tbody.innerHTML = sortCoffee(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
 
 input.addEventListener('input', function () {
+    var list = '';
     coffees.forEach(function(coffee) {
-        if(coffee.name.includes(input.value)) {
-            tbody.innerHTML = coffee.name;
-        }
+        if(coffee.name.toLowerCase().includes(input.value.toLowerCase())) {
+            // tbody.innerHTML = coffee.name;
+            list += renderCoffee(coffee)
+        } tbody.innerHTML = list;
     })
 })
+
+var makingCoffee = function (name,roast)
+{
+    var makeObject = {
+        name: name,
+        roast: roast
+    }
+    if (name !=="" && roast !== undefined)
+    {
+        coffees.push(makeObject)
+        updateCoffees(coffees);
+    }
+};
