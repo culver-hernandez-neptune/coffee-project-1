@@ -78,6 +78,8 @@ input.addEventListener('input', function () {
     })
 })
 
+
+
 var makingCoffee = function (name,roast)
 {
     var makeObject = {
