@@ -79,7 +79,11 @@ input.addEventListener('input', function () {
 })
 
 
+var setValue = function (value) {
 
+}
+
+var addName = document.forms.adds.addCoffee
 var makingCoffee = function (name,roast)
 {
     var makeObject = {
@@ -92,3 +96,4 @@ var makingCoffee = function (name,roast)
         updateCoffees(coffees);
     }
 };
+
