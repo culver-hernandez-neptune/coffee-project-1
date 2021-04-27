@@ -4,7 +4,7 @@
 function renderCoffee(coffee) {
     var html = '<div class="d-flex">';
     html += '<h3>' + coffee.name + '</h3>';
-    html += '<p class="roastName text-secondary" style="margin-top: 5px; margin-left: 5px; padding-top: 2px; align-self: flex-end;">' + coffee.roast + '</p>';
+    html += '<p class="roastName text-secondary">' + coffee.roast + '</p>';
     html += '</div>';
     return html;
 }
