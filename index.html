@@ -8,11 +8,11 @@
     <title></title>
 </head>
 <body class="container-fluid">
-<h1>Coffee!</h1>
+<h1>Coffee Project</h1>
 <main class="row">
     <div class="col-6">
         <div class="card">
-            <div class="card-body">
+            <div class="card-body" style="background: lightblue" >
                 <h2>Select your coffee</h2>
                 <div class="container">
                     <div class="row">
@@ -37,9 +37,14 @@
             </div>
         </div>
     </div>
-    <form name="adds" class="form" id="adds">
+
+    <div class="col-6">
+        <div class="card">
+        <div class="card-body" style="background: lightblue">
+    <form name="adds" class="col" id="adds">
         <h3>Add Coffee</h3>
         <div class="input-group">
+            <div>
             <input type="text" name="addCoffee" id="addCoffee"
                    aria-label="Text input with dropdown button"
                    placeholder="Enter Coffee Name">
@@ -51,16 +56,18 @@
                 <option value="dark">Dark</option>
             </select>
         </div>
-        <button class="formRoast" type="button" id="submitNew" onclick="">Submit</button>
+        </div>
+        <button class="formRoast btn btn-primary" type="button" id="submitNew" onclick="">Submit</button>
     </form>
-
+        </div>
+    </div>
+    </div>
 
     <div class="col-6">
         <div class="align-bottom" id="coffees"></div>
     </div>
 
 </main>
-
 
 <script src="main.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
