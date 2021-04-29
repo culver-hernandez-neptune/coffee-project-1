@@ -79,21 +79,23 @@ input.addEventListener('input', function () {
 })
 
 
-var setValue = function (value) {
+var addCoffee = document.querySelector('#addCoffee');
+var addRoast = document.querySelector('#addRoast')
+var submitNew = document.querySelector('#submitNew');
+submitNew.addEventListener('click', function () {
+    coffees.push({
+        id: 15,
+        name: addCoffee.value,
+        roast: addRoast.value
+    });
 
-}
+    console.log(coffees)
+    tbody.innerHTML = sortCoffee(coffees);
+});
 
-var addName = document.forms.adds.addCoffee
-var makingCoffee = function (name,roast)
-{
-    var makeObject = {
-        name: name,
-        roast: roast
-    }
-    if (name !=="" && roast !== undefined)
-    {
-        coffees.push(makeObject)
-        updateCoffees(coffees);
-    }
-};
+
+
+
+
+
 
